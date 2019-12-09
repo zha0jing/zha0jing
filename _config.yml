@@ -1,39 +1,119 @@
-title: 一只快乐的小熊猫的言行录
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-baseurl: "/zha0jing.github.io" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+# Where things are
+source: .
+destination: ./_site
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+data_dir: ./_data
+includes_dir: ./_includes
 
-# Author Settings
-author: zha0jing # add your name
-author-img: zha0jing.jpg # add your photo
-about-author: 一只快乐的小熊猫。胖胖的软软的。喜欢爬树。 # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github:  # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+# this config will lead github pages blog(jekyll 3.0.3) generate no rendered posts
+# so comment out this until github used jekyll updated
+# collections: null
 
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
 
-# Tracker
-analytics: # Google Analytics
+# Automatically Excerpt. Not recommend.
+# Added on 2019-10-31
+# Please use <!-- more --> in the post to control excerpt accurately.
+auto_excerpt:
+  enable: true
+  length: 250
 
-# Build Settings
-markdown: kramdown
-plugins:
+
+# Handling Reading
+safe: false
+include: [".htaccess"]
+exclude: []
+keep_files: [".git", ".svn"]
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future: true
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:
+  - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
 
-paginate: 8
-paginate_path: "/page/:num"
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+# Outputting
+permalink: /:year/:month/:title.html
+# paginate: 8
+paginate_path: /page:num
+timezone: Asia/Beijing
 
-theme: jekyll-theme-hacker
+
+quiet: false
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      comments: true
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: pages   # limit to posts
+    values:
+      comments: false
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+  enable_coderay: false
+
+#iLotus configs
+iLotus:
+  columns: 1
+  begin: 2014
+
+  # comments provider
+  comments:
+    provider: disqus
+    duoshuo:
+      short_name:
+    disqus:
+      short_name: zhaoxinlong.cn
+
+  archives_path: /archives.html
+  contact_path: /contact.html
+  tags_path: /tags.html
+
+  #菜单配置
+  navs:
+    - text: 首页
+      url: /
+      icon: fa fa-home
+      class: home
+    - text: 文章归档
+      url: /archives.html
+      icon: fa fa-reorder
+      class: none
+    - text: 文章标签
+      url: /tags.html
+      icon: fa fa-tags
+      class: none
+    - text: 关于我
+      url: /contact.html
+      icon: fa fa-user
+      class: none
+
+
+#站点基础配置
+title: 一只快乐的小熊猫
+subTitle: 
+description: 我还年轻
+keywords: 快乐, 小熊猫, zha0jing
