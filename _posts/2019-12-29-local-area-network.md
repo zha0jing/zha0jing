@@ -7,6 +7,8 @@ tags: [局域网, 俄罗斯, 断网]
 
 ![](/uploads/2019/12/01-smelling.jpeg)
 
+图片摄于北京地铁 10 号线
+
 
 ### zha0jing 言行录
 
