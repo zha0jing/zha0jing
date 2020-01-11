@@ -5,7 +5,7 @@ pid: 2020011102
 tags: [家暴]
 ---
 
-![](/uploads/2020/01/tower.jpeg)
+![](/uploads/2020/01/paved_path.jpeg)
 
 图片摄于北京石景山朗园 Park
 
