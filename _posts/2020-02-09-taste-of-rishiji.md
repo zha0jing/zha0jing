@@ -7,7 +7,7 @@ tags: [火锅, 女朋友]
 
 ![](/uploads/2020/02/01-rishiji.jpeg)
 
-图片摄于北京西站
+介入自日食记B站视频
 
 
 ### zha0jing 言行录
