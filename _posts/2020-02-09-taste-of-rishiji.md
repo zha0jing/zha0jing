@@ -7,7 +7,7 @@ tags: [火锅, 女朋友]
 
 ![](/uploads/2020/02/01-rishiji.jpeg)
 
-介入自日食记B站视频
+截图自日食记B站视频
 
 
 ### zha0jing 言行录
